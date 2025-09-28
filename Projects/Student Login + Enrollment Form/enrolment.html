@@ -1,0 +1,38 @@
+<!--
+This file lets students fill in their fullname, studentid, and choose a course from a dropdown menu.
+The form data is sent to process_enrolment.php for displaying later.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Enrolment Form</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    
+    <h2>Student Enrolment Form</h2>
+    <div class="form-box">
+        <form method="post" action="process_enrolment.php">
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" required><br><br>
+
+            <label>Student ID:</label><br>
+            <input type="text" name="studentid" required><br><br>
+
+            <label>Course:</label><br>
+            <select name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="IT">Information Technology</option>
+                <option value="Business">Business</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Nursing">Nursing</option>
+            </select><br><br>
+
+            <button type="submit">Submit Enrolment</button>
+        </form>
+    </div>
+</body>
+</html>
